@@ -1,0 +1,113 @@
++++++++++++[The result]+++++++++++
+
+-------------
+http://www.zoosnet.net/search.php?keyword=ifconfig
+[!!] 1 : 404   usecase:ifconfig
+-------------
+http://www.zoosnet.net/search.php?keyword=netstat
+[!!] 2 : 404   usecase:netstat
+-------------
+http://www.zoosnet.net/search.php?keyword=hostname
+[!!] 3 : 404   usecase:hostname
+-------------
+http://www.zoosnet.net/search.php?keyword=host
+[!!] 4 : 404   usecase:host
+-------------
+http://www.zoosnet.net/search.php?keyword=nslookup
+[!!] 5 : 404   usecase:nslookup
+-------------
+http://www.zoosnet.net/search.php?keyword=nc+-l
+[!!] 6 : 404   usecase:nc -l
+-------------
+http://www.zoosnet.net/search.php?keyword=ping+192.168.16.16
+[!!] 7 : 404   usecase:ping 192.168.16.16
+-------------
+http://www.zoosnet.net/search.php?keyword=groupadd+-o
+[!!] 8 : 404   usecase:groupadd -o
+-------------
+http://www.zoosnet.net/search.php?keyword=groupdel
+[!!] 9 : 404   usecase:groupdel
+-------------
+http://www.zoosnet.net/search.php?keyword=groupmod+-o
+[!!] 10 : 404   usecase:groupmod -o
+-------------
+http://www.zoosnet.net/search.php?keyword=useradd+-o
+[!!] 11 : 404   usecase:useradd -o
+-------------
+http://www.zoosnet.net/search.php?keyword=userdel
+[!!] 12 : 404   usecase:userdel
+-------------
+http://www.zoosnet.net/search.php?keyword=usermod+-o
+[!!] 13 : 404   usecase:usermod -o
+-------------
+http://www.zoosnet.net/search.php?keyword=passwd
+[!!] 14 : 404   usecase:passwd
+-------------
+http://www.zoosnet.net/search.php?keyword=more
+[!!] 15 : 404   usecase:more
+-------------
+http://www.zoosnet.net/search.php?keyword=less
+[!!] 16 : 404   usecase:less
+-------------
+http://www.zoosnet.net/search.php?keyword=%7Cgrep
+[!!] 17 : 404   usecase:|grep
+-------------
+http://www.zoosnet.net/search.php?keyword=sed
+[!!] 18 : 404   usecase:sed
+-------------
+http://www.zoosnet.net/search.php?keyword=echo+%22xxx%22%3E
+[!!] 19 : 404   usecase:echo "xxx">
+-------------
+http://www.zoosnet.net/search.php?keyword=shutdown+-h+now
+[!!] 20 : 404   usecase:shutdown -h now
+-------------
+http://www.zoosnet.net/search.php?keyword=reboot
+[!!] 21 : 404   usecase:reboot
+-------------
+http://www.zoosnet.net/search.php?keyword=logout
+[!!] 22 : 404   usecase:logout
+-------------
+http://www.zoosnet.net/search.php?keyword=net+user
+[!!] 23 : 404   usecase:net user
+-------------
+http://www.zoosnet.net/search.php?keyword=net+localgroup
+[!!] 24 : 404   usecase:net localgroup
+-------------
+http://www.zoosnet.net/search.php?keyword=net+start
+[!!] 25 : 404   usecase:net start
+-------------
+http://www.zoosnet.net/search.php?keyword=net+stop
+[!!] 26 : 404   usecase:net stop
+-------------
+http://www.zoosnet.net/search.php?keyword=copy
+[!!] 27 : 404   usecase:copy
+-------------
+http://www.zoosnet.net/search.php?keyword=move
+[!!] 28 : 404   usecase:move
+-------------
+http://www.zoosnet.net/search.php?keyword=fgets
+[!!] 29 : 404   usecase:fgets
+-------------
+http://www.zoosnet.net/search.php?keyword=file_get_contents
+[!!] 30 : 404   usecase:file_get_contents
+-------------
+http://www.zoosnet.net/search.php?keyword=file_put_contents
+[!!] 31 : 404   usecase:file_put_contents
+-------------
+http://www.zoosnet.net/search.php?keyword=call_user_func
+[!!] 32 : 404   usecase:call_user_func
+-------------
+http://www.zoosnet.net/search.php?keyword=gzcompress
+[!!] 33 : 404   usecase:gzcompress
+-------------
+http://www.zoosnet.net/search.php?keyword=gzencode
+[!!] 34 : 404   usecase:gzencode
+-------------
+http://www.zoosnet.net/search.php?keyword=gzread
+[!!] 35 : 404   usecase:gzread
+-------------
+http://www.zoosnet.net/search.php?keyword=session_start
+[!!] 36 : 404   usecase:session_start
+-------------
+http://www.zoosnet.net/search.php?keyword=scandir
+[!!] 37 : 404   usecase:scandir

